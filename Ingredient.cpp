@@ -52,3 +52,4 @@ void Ingredient::setUnit(std::string setUnit){
 void Ingredient::setCount(int setCount){
     count = setCount;
 }
+
