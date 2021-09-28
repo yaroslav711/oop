@@ -4,9 +4,6 @@
 #include <iostream>
 #include <assert.h>
 
-void testConstructors();
-void testGetAndSet();
-
 class Ingredient {
 public:
     
@@ -16,13 +13,13 @@ public:
         name = value_name;
     }
     
-    std::string getName() const { return (name); }
+    std::string getName() { return (name); }
     
     void setUnit(std::string value_unit) {
         unit = value_unit;
     }
     
-    std::string getUnit() const { return (unit); }
+    std::string getUnit() { return (unit); }
     
     void setCount(int value_count) {  // проверка на то, что кол-во больше 0
         if (value_count > 0)
@@ -34,11 +31,11 @@ public:
     
     int getCount() const { return (count); }
     
-    Ingredient() = default;  //конструктор по умолчанию
+    Ingredient();  //конструктор по умолчанию
     
-    Ingredient(std::string name, std::string unit, int count);  //конструктор инициализации
+    Ingredient(std::string name, std::string unit, int count);  //конструктор инициализации ТУТ ССЫЛКИ
     
-    Ingredient(const Ingredient& other) = default;  //конструктор копирования
+    Ingredient(const Ingredient& other);  //конструктор копирования
     
 private:
     std::string name; // название ингридиента
