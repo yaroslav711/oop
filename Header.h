@@ -37,6 +37,8 @@ public:
     
     Ingredient(const Ingredient& other);  //конструктор копирования
     
+    ~Ingredient();
+    
 private:
     std::string name; // название ингридиента
     std::string unit; // единица измерения
