@@ -37,7 +37,7 @@ public:
     
     Ingredient(const Ingredient& other);  //конструктор копирования
     
-    ~Ingredient();
+    ~Ingredient(); //деструктор
     
 private:
     std::string name; // название ингридиента
