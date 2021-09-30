@@ -1,9 +1,6 @@
 #include "Header.h"
 #include <assert.h>
 
-Ingredient::Ingredient(std::string name, std::string unit, int count): 
-    name(name), unit(unit), count(count){}
-
 int main() {
     Ingredient ingredientTest0;
     Ingredient ingredientTest1("Молоко", "милилитр", 200);
